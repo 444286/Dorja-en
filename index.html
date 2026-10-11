@@ -472,7 +472,7 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
       <div class="bc-content">
         <div class="balance-title">Total Balance <i class="fa-regular fa-eye"></i></div>
         <div style="display:flex;align-items:baseline;gap:6px;margin:4px 0 2px">
-          <div class="balance-amount" style="font-size:28px;white-space:nowrap;">৳ <span id="hbal">0.00</span></div>
+          <div class="balance-amount" style="font-size:28px;white-space:nowrap;">$ <span id="hbal">0.00</span></div>
         </div>
         <div class="balance-sub">Available Balance</div>
         <div class="stats-boxes">
@@ -496,9 +496,9 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
         <div class="css-wallet-body">
           <div class="css-wallet-flap"><div class="css-wallet-button"></div></div>
         </div>
-        <div class="css-coin coin-1">৳</div>
-        <div class="css-coin coin-2">৳</div>
-        <div class="css-coin coin-3">৳</div>
+        <div class="css-coin coin-1">$</div>
+        <div class="css-coin coin-2">$</div>
+        <div class="css-coin coin-3">$</div>
       </div>
     </div>
 
@@ -514,7 +514,7 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
     </div>
 
     <div class="ad-section">
-      <div class="ad-top-badge" id="wcRB">+৳ 0.50</div>
+      <div class="ad-top-badge" id="wcRB">+$ 0.50</div>
       <div class="ad-content">
         <div class="ad-title">Earn by Watching Ads ✨</div>
         <div class="ad-desc">⚠️After opening an ad, make sure to click buttons such as Play Now, Go, or Yes/No. ⚠️<br>⚠️If an ad asks you to sign up, complete the sign-up.⚠️</div>
@@ -524,7 +524,7 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
             <p>Watched Today</p>
           </div>
           <div class="ad-s-item">
-            <h4><i class="fa-solid fa-coins gold"></i> <span id="adRewardLbl">৳0.50</span></h4>
+            <h4><i class="fa-solid fa-coins gold"></i> <span id="adRewardLbl">$0.50</span></h4>
             <p>Per Ad</p>
           </div>
         </div>
@@ -535,7 +535,7 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
           <div class="btn-play-icon"><i class="fa-solid fa-play"></i></div>
           <div class="btn-text">
             <h3 id="watchBtnTxt">Watch Ad</h3>
-            <p>Earn <span id="watchBtnReward">৳0.50</span> per ad</p>
+            <p>Earn <span id="watchBtnReward">$0.50</span> per ad</p>
           </div>
         </div>
         <div class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></div>
@@ -548,8 +548,8 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
       </div>
       <div class="css-3d-play-container">
         <div class="css-play-box"><div class="css-play-triangle"></div></div>
-        <div class="css-coin play-coin-1">৳</div>
-        <div class="css-coin play-coin-2">৳</div>
+        <div class="css-coin play-coin-1">$</div>
+        <div class="css-coin play-coin-2">$</div>
       </div>
     </div>
 
@@ -666,12 +666,12 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
         <div class="wbal-label"><i class="fa-solid fa-wallet"></i> Wallet Balance</div>
         <div class="wbal-3d">
           <div class="wbal-body"><div class="wbal-flap"><div class="wbal-btn"></div></div></div>
-          <div class="wbal-c wbal-c1">৳</div>
-          <div class="wbal-c wbal-c2">৳</div>
+          <div class="wbal-c wbal-c1">$</div>
+          <div class="wbal-c wbal-c2">$</div>
         </div>
       </div>
       <div class="wbal-amount-row">
-        <span class="wbal-taka">৳ </span><span class="wbal-num" id="wdBal">0.00</span>
+        <span class="wbal-taka">$ </span><span class="wbal-num" id="wdBal">0.00</span>
       </div>
       <div style="margin-top:10px;">
         <div class="wbal-badge"><i class="fa-solid fa-wallet"></i> Total Balance</div>
@@ -680,11 +680,11 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
     <div class="wstats-row">
       <div class="wstat-item">
         <div class="wstat-top"><div class="wstat-ic green"><i class="fa-solid fa-arrow-down"></i></div>Withdrawn</div>
-        <div class="wstat-val">৳ <span id="wStatWd">0.00</span></div>
+        <div class="wstat-val">$ <span id="wStatWd">0.00</span></div>
       </div>
       <div class="wstat-item">
         <div class="wstat-top"><div class="wstat-ic orange"><i class="fa-regular fa-clock"></i></div>Pending</div>
-        <div class="wstat-val">৳ <span id="wStatPending">0.00</span></div>
+        <div class="wstat-val">$ <span id="wStatPending">0.00</span></div>
       </div>
     </div>
     <div class="wdform-card">
@@ -716,7 +716,7 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
         <label class="wdinput-lbl">Withdraw Amount</label>
         <div class="wdinput-wrap">
           <input class="wdinput" type="number" id="wdAmt" placeholder="Enter amount" inputmode="numeric" min="0">
-          <span class="wdinput-taka">৳</span>
+          <span class="wdinput-taka">$</span>
         </div>
       </div>
       <button class="wd-btn" id="wdBtn" onclick="handleWithdraw()">
@@ -776,7 +776,7 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
     </div>
     <div class="adov-complete" id="adovComplete">
       <div class="adov-complete-ic">💵💶💷</div>
-      <div class="adov-complete-txt" id="adovCompleteTxt">+৳ 0.50 Added!</div>
+      <div class="adov-complete-txt" id="adovCompleteTxt">+$ 0.50 Added!</div>
       <div class="adov-complete-sub" id="adovCompleteSub">The amount has been added to your account successfully.</div>
     </div>
   </div>
@@ -1010,7 +1010,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       renderSupport();
 
       // FIX: rbLbl is not present in this HTML, so use _set()
-      _set('minWd', `৳ ${(APP.settings.minWithdraw || 50).toFixed(2)}`);
+      _set('minWd', `$ ${(APP.settings.minWithdraw || 50).toFixed(2)}`);
 
       updateWatchCard();
       updateWdBtn();
@@ -1110,7 +1110,7 @@ function renderTasks() {
       : hasCh
         ? `<div class="t-arrow" onclick="openTaskVerify('${t.id}')"><i class="fa-solid fa-arrow-right"></i></div>`
         : `<div class="t-arrow" onclick="doTaskDirect('${t.id}')"><i class="fa-solid fa-arrow-right"></i></div>`;
-    return `<div class="task-slide-item ${done ? 'done' : ''}">${getIconEl(t)}<div class="t-info"><h4>${t.name}</h4><p>${t.desc || ''}</p><div class="t-reward-txt">+৳ ${Number(t.reward).toFixed(2)}</div></div>${actionEl}</div>`;
+    return `<div class="task-slide-item ${done ? 'done' : ''}">${getIconEl(t)}<div class="t-info"><h4>${t.name}</h4><p>${t.desc || ''}</p><div class="t-reward-txt">+$ ${Number(t.reward).toFixed(2)}</div></div>${actionEl}</div>`;
   }).join('');
 }
 
@@ -1132,7 +1132,7 @@ function openTaskVerify(id) {
   TOV = { taskId: id, link: t.link || '', channelId: t.channelId || t.channelUsername || '' };
   _set('tovIc', t.icon || '📢');
   _set('tovTitle', t.name);
-  _set('tovSub', `Join the channel to earn ৳${Number(t.reward).toFixed(2)}. After joining, tap "Verify" to claim.`);
+  _set('tovSub', `Join the channel to earn $${Number(t.reward).toFixed(2)}. After joining, tap "Verify" to claim.`);
   _set('tovStatus', '');
   _set('tovVerifyBtn', "✅ I've Joined — Verify");
   document.getElementById('taskOv').classList.add('open');
@@ -1188,7 +1188,7 @@ async function completeTask(id, t) {
     totalEarned: (d.totalEarned || 0) + Number(t.reward),
     completedTasks: [...existingTasks, id]
   });
-  showToast(`+৳ ${Number(t.reward).toFixed(2)} added!`);
+  showToast(`+$ ${Number(t.reward).toFixed(2)} added!`);
 }
 
 // ══ COOLDOWN ══
@@ -1241,9 +1241,9 @@ function updateWatchCard() {
   const wc = APP.settings.watchChain || {};
   const reward = wc.reward || 0.5;
   const limit  = wc.dailyLimit || 5;
-  _set('wcRB', `+৳ ${reward.toFixed(2)}`);
-  _set('adRewardLbl', `৳${reward.toFixed(2)}`);
-  _set('watchBtnReward', `৳${reward.toFixed(2)}`);
+  _set('wcRB', `+$ ${reward.toFixed(2)}`);
+  _set('adRewardLbl', `$${reward.toFixed(2)}`);
+  _set('watchBtnReward', `$${reward.toFixed(2)}`);
   const todayCount = getTodayWatchCount();
   _set('wcTodayAd', todayCount);
   _set('wcToday', todayCount);
@@ -1415,13 +1415,13 @@ async function chainAllDone() {
         cooldownEndTime: newCooldownEnd
       });
       cooldownEndTime = newCooldownEnd;
-      _set('adovCompleteTxt', `+৳ ${reward.toFixed(2)} Added!`);
+      _set('adovCompleteTxt', `+$ ${reward.toFixed(2)} Added!`);
       _set('adovCompleteSub', 'Your balance has been updated');
       document.getElementById('adovComplete').classList.add('show');
       setTimeout(() => {
         document.getElementById('adOverlay').classList.remove('open');
         startCooldownUI(newCooldownEnd - Date.now());
-        showToast(`+৳ ${reward.toFixed(2)} added!`);
+        showToast(`+$ ${reward.toFixed(2)} added!`);
         CS = { active: false, type: null, queue: [], idx: 0, total: 0, reward: 0, done: false, wdData: null };
       }, 2000);
     } catch (e) {
@@ -1448,7 +1448,7 @@ function handleWithdraw() {
   const minWd   = APP.settings.minWithdraw || 50;
   if (!wallet)  return showToast('⚠️ Select payment method');
   if (!account) return showToast('⚠️ Enter account number');
-  if (!amount || amount < minWd) return showToast(`⚠️ Minimum ৳${minWd.toFixed(2)}`);
+  if (!amount || amount < minWd) return showToast(`⚠️ Minimum $${minWd.toFixed(2)}`);
   if (amount > APP.balance) return showToast('⚠️ Insufficient balance');
   const wlMap = { bkash: 'bKash', nagad: 'Nagad', rocket: 'Rocket', binance: 'Binance (USDT)', crypto: 'Crypto' };
   const wdData = { wallet, walletLabel: wlMap[wallet] || wallet, account, amount };
@@ -1501,7 +1501,7 @@ function renderWdHist(items) {
     const lt = logoText[h.wallet] || '💰';
     const stClass = h.status === 'approved' ? 'approved' : h.status === 'rejected' ? 'rejected' : 'pending';
     const stLabel = h.status === 'approved' ? 'Approved' : h.status === 'rejected' ? 'Rejected' : 'Pending';
-    return `<div class="hitem-new"><div class="hitem-logo ${lc}">${lt}</div><div class="hitem-inf"><div class="hitem-name">${h.walletLabel || h.wallet}</div><div class="hitem-acc">${maskAccount(h.account)}</div><div class="hitem-date">${fd(h.createdAt)}</div>${h.status === 'rejected' && h.reason ? `<div class="hitem-reject-reason">⚠️ ${h.reason}</div>` : ''}</div><div class="hitem-right"><div class="hstatus ${stClass}">${stLabel}</div><div class="hitem-amt">৳ ${Number(h.amount).toFixed(2)}</div></div></div>`;
+    return `<div class="hitem-new"><div class="hitem-logo ${lc}">${lt}</div><div class="hitem-inf"><div class="hitem-name">${h.walletLabel || h.wallet}</div><div class="hitem-acc">${maskAccount(h.account)}</div><div class="hitem-date">${fd(h.createdAt)}</div>${h.status === 'rejected' && h.reason ? `<div class="hitem-reject-reason">⚠️ ${h.reason}</div>` : ''}</div><div class="hitem-right"><div class="hstatus ${stClass}">${stLabel}</div><div class="hitem-amt">$ ${Number(h.amount).toFixed(2)}</div></div></div>`;
   }).join('');
 }
 
