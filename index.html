@@ -12,7 +12,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
 <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
-<script src="https://oatstuckalfred.com/ad/18/ef/ad18ef6c08c5644c10f1fa132afa743f.js"></script>
+
 <script src='//libtl.com/sdk.js' data-zone='10900318' data-sdk='show_10900318'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&family=Hind+Siliguri:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -324,10 +324,10 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
 .pm-item:active { transform:scale(.93); }
 .pm-item.active { border-color:#7c3aed; background:rgba(124,111,253,0.14); box-shadow:0 0 14px rgba(124,111,253,0.38),inset 0 0 8px rgba(124,111,253,0.08); }
 .pm-ic { width:46px; height:46px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; color:#fff; overflow:hidden; flex-shrink:0; }
-.pm-ic.bkash  { background:linear-gradient(135deg,#e2136e,#9a0e4b); }
-.pm-ic.nagad  { background:linear-gradient(135deg,#f6821f,#c8510d); }
-.pm-ic.rocket { background:linear-gradient(135deg,#8b1db8,#5a0f7a); }
-.pm-ic.binance{ background:linear-gradient(135deg,#f0b90b,#c8900a); color:#1a1200; }
+.pm-ic.bkash  { background:linear-gradient(135deg,#26a17b,#16775a); } /* USDT */
+.pm-ic.nagad  { background:linear-gradient(135deg,#087cda,#064a91); } /* WebMoney */
+.pm-ic.rocket { background:linear-gradient(135deg,#1646b8,#082c78); } /* PayPal */
+.pm-ic.binance{ background:linear-gradient(135deg,#7c3aed,#4c1d95); } /* Wire */
 .pm-ic.crypto { background:linear-gradient(135deg,#f7931a,#b56010); }
 .pm-lbl { font-size:10px; font-weight:600; color:#9ca3af; font-family:'Poppins',sans-serif; text-align:center; }
 .pm-item.active .pm-lbl { color:#c4b5fd; }
@@ -350,10 +350,10 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
 .wdhist-title i { color:#a855f7; }
 .hitem-new { background:#0c0a1e; border:1px solid rgba(255,255,255,0.07); border-radius:14px; padding:14px; margin-bottom:10px; display:flex; align-items:center; gap:12px; }
 .hitem-logo { width:46px; height:46px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:800; flex-shrink:0; color:#fff; }
-.hitem-logo.bkash  { background:linear-gradient(135deg,#e2136e,#9a0e4b); }
-.hitem-logo.nagad  { background:linear-gradient(135deg,#f6821f,#c8510d); }
-.hitem-logo.rocket { background:linear-gradient(135deg,#8b1db8,#5a0f7a); }
-.hitem-logo.binance{ background:linear-gradient(135deg,#f0b90b,#c8900a); color:#1a1200; }
+.hitem-logo.bkash  { background:linear-gradient(135deg,#26a17b,#16775a); } /* USDT */
+.hitem-logo.nagad  { background:linear-gradient(135deg,#087cda,#064a91); } /* WebMoney */
+.hitem-logo.rocket { background:linear-gradient(135deg,#1646b8,#082c78); } /* PayPal */
+.hitem-logo.binance{ background:linear-gradient(135deg,#7c3aed,#4c1d95); } /* Wire */
 .hitem-logo.crypto { background:linear-gradient(135deg,#f7931a,#b56010); }
 .hitem-logo.default{ background:rgba(255,255,255,0.08); }
 .hitem-inf { flex:1; min-width:0; }
@@ -693,22 +693,22 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
         <div class="wdform-head-txt">Withdraw Money</div>
       </div>
       <div class="pm-grid" id="pmGrid">
-        <div class="pm-item active" onclick="selectPM(this,'bkash')"><div class="pm-ic bkash">bKash</div><div class="pm-lbl">bKash</div></div>
-        <div class="pm-item" onclick="selectPM(this,'nagad')"><div class="pm-ic nagad">Nagad</div><div class="pm-lbl">Nagad</div></div>
-        <div class="pm-item" onclick="selectPM(this,'rocket')"><div class="pm-ic rocket">Rocket</div><div class="pm-lbl">Rocket</div></div>
-        <div class="pm-item" onclick="selectPM(this,'binance')"><div class="pm-ic binance">BNB</div><div class="pm-lbl">Binance</div></div>
+        <!-- Keep legacy values so admin/backend routing stays unchanged. -->
+        <div class="pm-item active" onclick="selectPM(this,'bkash')"><div class="pm-ic bkash">USDT</div><div class="pm-lbl">USDT</div></div>
+        <div class="pm-item" onclick="selectPM(this,'nagad')"><div class="pm-ic nagad">WM</div><div class="pm-lbl">WebMoney</div></div>
+        <div class="pm-item" onclick="selectPM(this,'rocket')"><div class="pm-ic rocket">P</div><div class="pm-lbl">PayPal</div></div>
+        <div class="pm-item" onclick="selectPM(this,'binance')"><div class="pm-ic binance">WIRE</div><div class="pm-lbl">Wire</div></div>
       </div>
       <select id="wdWallet" style="display:none;">
-        <option value="bkash" selected>bKash</option>
-        <option value="nagad">Nagad</option>
-        <option value="rocket">Rocket</option>
-        <option value="binance">Binance (USDT)</option>
-        <option value="crypto">Crypto</option>
+        <option value="bkash" selected>USDT</option>
+        <option value="nagad">WebMoney</option>
+        <option value="rocket">PayPal</option>
+        <option value="binance">Wire</option>
       </select>
       <div class="wdinput-g">
-        <label class="wdinput-lbl">Account Number</label>
+        <label class="wdinput-lbl">Payment Account / Wallet Address</label>
         <div class="wdinput-wrap">
-          <input class="wdinput" type="text" id="wdAcc" placeholder="Enter your account number" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+          <input class="wdinput" type="text" id="wdAcc" placeholder="Enter account, email, or wallet address" autocomplete="off">
           <span class="wdinput-icon"><i class="fa-regular fa-user"></i></span>
         </div>
       </div>
@@ -807,7 +807,7 @@ body { background:var(--bg-dark); color:var(--text-main); min-height:100vh; over
 
  <div class="rules-item"><div class="rules-check">✓</div><div class="rules-item-txt">Remember: <span>Your payment may be cancelled if you do not click correctly.</span> Follow the instructions properly to receive payment.</div></div>
 
-      <div class="rules-tip"><span class="rules-tip-ic">💡</span><span>Tap Watch Ad → <b>Click the ad buttons</b> and receive money via bKash, Nagad, or Rocket</span></div>
+      <div class="rules-tip"><span class="rules-tip-ic">💡</span><span>Tap Watch Ad → <b>Click the ad buttons</b> and request payout via USDT, WebMoney, PayPal, or Wire</span></div>
     </div>
     <div class="rules-warning">
       <div class="rules-warning-ic">🛡️</div>
@@ -1450,7 +1450,7 @@ function handleWithdraw() {
   if (!account) return showToast('⚠️ Enter account number');
   if (!amount || amount < minWd) return showToast(`⚠️ Minimum $${minWd.toFixed(2)}`);
   if (amount > APP.balance) return showToast('⚠️ Insufficient balance');
-  const wlMap = { bkash: 'bKash', nagad: 'Nagad', rocket: 'Rocket', binance: 'Binance (USDT)', crypto: 'Crypto' };
+  const wlMap = { bkash: 'USDT', nagad: 'WebMoney', rocket: 'PayPal', binance: 'Wire' };
   const wdData = { wallet, walletLabel: wlMap[wallet] || wallet, account, amount };
   const wdc = APP.settings.withdrawChain || {};
   if (wdc.enabled && (wdc.slots || []).length > 0) startChain('withdraw', wdData);
@@ -1495,7 +1495,7 @@ function renderWdHist(items) {
   const el = document.getElementById('wdHist');
   if (!items.length) { el.innerHTML = `<div class="empty"><div class="eic">📭</div>No withdrawals yet</div>`; return; }
   const logoClass = { bkash: 'bkash', nagad: 'nagad', rocket: 'rocket', binance: 'binance', crypto: 'crypto' };
-  const logoText  = { bkash: 'bK', nagad: 'N', rocket: 'R', binance: 'B', crypto: '₿' };
+  const logoText  = { bkash: '₮', nagad: 'WM', rocket: 'P', binance: 'W', crypto: '₿' };
   el.innerHTML = items.map(h => {
     const lc = logoClass[h.wallet] || 'default';
     const lt = logoText[h.wallet] || '💰';
